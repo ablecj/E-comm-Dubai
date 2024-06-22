@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 export default function Carousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +13,7 @@ export default function Carousel({ images }) {
   };
   return (
     <div className="relative w-full  mx-auto flex justify-center  ">
-      <div className="overflow-hidden relative h-[350px]  sm:w-full w-[90%] rounded-lg">
+      <div className="overflow-hidden relative sm:h-[350px] h-[200px]  sm:w-full w-[90%] rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -30,13 +31,13 @@ export default function Carousel({ images }) {
         onClick={prevSlide}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        &#9664;
+       <FaAngleLeft />
       </button>
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        &#9654;
+        <FaAngleRight />
       </button>
     </div>
   )

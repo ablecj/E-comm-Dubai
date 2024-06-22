@@ -47,7 +47,7 @@ export default function Home() {
       <h1 className="text-black text-[30px] font-bold ml-[25px] mt-5 p-2">Platform Price</h1>
 
       <div className="flex items-center justify-center p-4 sm:p-8">
-      <div className="w-full sm:w-[100%] flex-col items-center h-auto flex justify-center bg-gradient-to-b from-lightYellow to-white rounded-lg">
+      <div className="w-full sm:w-[100%] flex-col items-center h-auto flex justify-center bg-gradient-to-b from-lightYellow to-white rounded-lg sm:pb-4 pb-6">
         <p className="w-full sm:w-fit p-2 text-center sm:text-left">Automatic refresh after 30 sec</p>
         <h1 className="w-full sm:w-fit p-2 text-[28px] sm:text-[36px] font-extrabold text-center sm:text-left">350 INR</h1>
         <h4 className="w-full sm:w-fit p-2 text-[18px] sm:text-[22px] font-medium text-center sm:text-left">1 USD = 350 INR</h4>
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
     </div>
 
-      <div className="w-full h-auto flex text-center justify-center items-center p-5 bg-blue-300">
+      <div className="w-full h-auto flex text-center justify-center items-center p-5 bg-gray-500">
         <ul className="flex gap-20">
           <Link to={"/"}>
             {" "}
